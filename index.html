@@ -1,131 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayoub Bel Biyad - Portfolio</title>
+    <title>Ayoub BEL BIYAD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #f4f4f4;
         }
         header {
-            background-color: #1e90ff;
-            color: white;
-            padding: 1.5rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 26px;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
         .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 1rem;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
             background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            cursor: pointer;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        h2:hover {
+            color: #3498db;
+            transform: scale(1.05);
         }
         .section {
-            margin-bottom: 2rem;
-        }
-        .section h2 {
-            color: #1e90ff;
-            border-bottom: 2px solid #1e90ff;
-            padding-bottom: 0.5rem;
+            margin-bottom: 20px;
         }
         ul {
             list-style: none;
             padding: 0;
+            display: none;
+            transition: max-height 0.5s ease-in-out;
         }
-        ul li {
-            margin-bottom: 0.5rem;
+        li {
+            background: #ecf0f1;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        li:hover {
+            transform: scale(1.05);
         }
         .contact {
             text-align: center;
+            margin-top: 20px;
         }
         .contact a {
-            color: #1e90ff;
             text-decoration: none;
-            margin: 0 10px;
+            color: white;
+            background: #3498db;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
         }
         .contact a:hover {
-            text-decoration: underline;
+            background: #2c3e50;
+        }
+        .linkedin {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .linkedin a {
+            text-decoration: none;
+            color: white;
+            background: #0077B5;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .linkedin a:hover {
+            background: #005582;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Ayoub Bel Biyad</h1>
-        <p>Elève-Ingénieur à Centrale Lille - Double cursus Ingénieur-Manager</p>
+        <div>Ayoub BEL BIYAD - Portfolio</div>
     </header>
-
     <div class="container">
-        <!-- About Me Section -->
-        <div class="section" id="about">
-            <h2>À propos de moi</h2>
-            <p>
-                Étudiant en double cursus à Centrale Lille et SKEMA Business School, je suis passionné par l'Intelligence Artificielle et la Data Science. À la recherche d’un stage technique en informatique/DATA à partir de juin 2025.
-            </p>
-        </div>
-
-        <!-- Education Section -->
-        <div class="section" id="education">
+        <div class="section">
             <h2>Formation</h2>
             <ul>
-                <li><strong>Diplôme d’Ingénieur</strong> - Centrale Lille / SKEMA Business School (2023 - 2028)</li>
-                <li><strong>Baccalauréat général scientifique</strong> - Mention Européenne Anglais (2020 - 2023)</li>
-                <li><strong>Certificat Professionnel</strong> - Google Data Analytics (2024 - 2025)</li>
+                <li>Diplôme d'Ingénieur - Centrale Lille (2023 - 2028)</li>
+                <li>Online Data Science Certificate - Harvard University (2025)</li>
+                <li>Baccalauréat scientifique - Lycée Notre Dame Le Mans (2023)</li>
             </ul>
         </div>
-
-        <!-- Experiences Section -->
-        <div class="section" id="experience">
-            <h2>Expériences</h2>
+        <div class="section">
+            <h2>Expérience Professionnelle</h2>
             <ul>
-                <li><strong>Forvis Mazars</strong> - Ambassadeur et formation en Conseil IT (Octobre 2024 - Aujourd'hui)</li>
-                <li><strong>Bioteos</strong> - Responsable technique pour un purificateur d'air autonome (Septembre 2024 - Aujourd'hui)</li>
-                <li><strong>Decathlon</strong> - Analyse des données de ventes, optimisation et établissement de KPI (Août 2024)</li>
-                <li><strong>Centrale IA</strong> - Responsable du pôle Formation / Développeur Python (Août 2024)</li>
+                <li>Ambassadeur - Forvis Mazars (2024 - Aujourd'hui)</li>
+                <li>Développeur Python - Centrale IA (2024 - Aujourd'hui)</li>
+                <li>Responsable technique - Bioteos (2024 - Aujourd'hui)</li>
+                <li>Conseiller en analyse des ventes - Decathlon France (2024)</li>
+                <li>Professeur particulier - Superprof (2024 - Présent)</li>
             </ul>
         </div>
-
-        <!-- Skills Section -->
-        <div class="section" id="skills">
+        <div class="section">
             <h2>Compétences</h2>
             <ul>
-                <li><strong>Programmation</strong> : Python, Matlab, C/C++, R, Java, Arduino</li>
-                <li><strong>Traitement des données</strong> : Excel, MySQL, Power BI</li>
-                <li><strong>Développement web</strong> : HTML, CSS, PHP</li>
-                <li><strong>Langues</strong> : Français (courant), Anglais (professionnel courant), Espagnol (intermédiaire)</li>
-                <li><strong>Intelligence Artificielle</strong> : Machine Learning, Deep Learning</li>
+                <li>Python, Machine Learning, SQL, Power BI, VBA</li>
+                <li>PHP, C, R, LaTeX, Excel, Matlab, Onshape</li>
             </ul>
         </div>
-
-        <!-- Interests Section -->
-        <div class="section" id="interests">
+        <div class="section">
+            <h2>Langues</h2>
+            <ul>
+                <li>Français (Langue maternelle)</li>
+                <li>Anglais (Professionnel courant)</li>
+                <li>Espagnol (Intermédiaire)</li>
+            </ul>
+        </div>
+        <div class="section">
             <h2>Centres d'intérêt</h2>
             <ul>
-                <li>Basketball : 8 ans de pratique compétitive</li>
-                <li>Échecs</li>
+                <li>Basketball (8 ans de pratique compétitive)</li>
+                <li>Club d'échecs de Centrale Lille</li>
             </ul>
         </div>
-
-        <!-- Contact Section -->
-        <div class="section contact" id="contact">
-            <h2>Contact</h2>
-            <p>Pour toute demande, n'hésitez pas à me contacter :</p>
-            <p>
-                <a href="mailto:ayoub.bel@iteem.centralelille.fr">ayoub.bel@iteem.centralelille.fr</a> |
-                <a href="tel:+33695129228">06 95 12 92 28</a>
-            </p>
-            <p>
-                <a href="https://www.linkedin.com/in/ayoub-bel-biyad" target="_blank">LinkedIn</a>
-            </p>
+        <div class="contact">
+            <a href="mailto:ayoub.bel@iteem.centralelille.fr">Me Contacter</a>
+        </div>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/ayoub-bel-biyad" target="_blank">Mon LinkedIn</a>
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            $('h2').click(function() {
+                $(this).next('ul').slideToggle(300);
+            });
+        });
+    </script>
 </body>
 </html>
